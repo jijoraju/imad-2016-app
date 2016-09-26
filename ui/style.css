@@ -19,4 +19,10 @@ body {
 .img-medium {
     height: 200px;
 }
+.container{
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: sans-serif;
+    color: gray;
+}
 
