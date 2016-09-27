@@ -8,7 +8,7 @@ element.innerHTML="Content has been updated using javascript";
 var img = document.getElementById('jijo-pic');
 function moveRight(){
     marginLeft = marginLeft + 10;
-    img.style.marginLeft = marginLeft + "px";
+    img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function(){
     var interval = setInterval(moveRight, 100);
