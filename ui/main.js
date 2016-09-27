@@ -6,6 +6,10 @@ element.innerHTML="Content has been updated using javascript";
 
 //animate the image
 var img = document.getElementById('jijo-pic');
+function moveRight(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + "px";
+}
 img.onclick = function(){
-    img.style.marginLeft="100px";
+    var interval = setIntervel(moveRight, 100);
 };
