@@ -6,6 +6,7 @@ element.innerHTML="Content has been updated using javascript";
 
 //animate the image
 var img = document.getElementById('jijo-pic');
+var marginLeft = 0;
 function moveRight(){
     marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + 'px';
