@@ -40,8 +40,8 @@ submits.onclick = function(){
     //capture the respose
     var nam = ['name1', 'name2', 'name3', 'name4'];
     var list = '';
-    for(var i=0;i<nam.length;i++){
-        list = '<li>' + nam[i] +'</li>';
+    for(var i=0; i<nam.length; i++){
+        list += '<li>' + nam[i] +'</li>';
     }
     var ul = document.getElementById('List');
     ul.innerHTML = list;
