@@ -57,6 +57,6 @@ submits.onclick = function(){
         }
     };
     
-    request.open('GET', 'http://jijoraju.imad.hasura-app.io/submit-names?name=' + name, true);
+    request.open('GET', 'http://jijoraju.imad.hasura-app.io/submit-names?name=' + names, true);
     request.send(null);
 };
