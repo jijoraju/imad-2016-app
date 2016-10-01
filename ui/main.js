@@ -35,11 +35,7 @@ button.onclick = function(){
 var names = document.getElementById('name').value;
 var submits = document.getElementById('submit');
 submits.onclick = function(){
-    // make the request
-    
-    //capture the respose
-   
-    
+  
     //create request object
     var request = new XMLHttpRequest();
     
@@ -61,6 +57,6 @@ submits.onclick = function(){
         }
     };
     
-    request.open('GET', 'http://jijoraju.imad.hasura-app.io/submit-names', true);
+    request.open('GET', 'http://jijoraju.imad.hasura-app.io/submit-names?name=' + name, true);
     request.send(null);
 };
