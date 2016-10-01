@@ -85,7 +85,17 @@ app.get('/:articleName', function (req, res){
   res.send(createTemplate(articles[articleName]));
 });
 
+var names = [];
+app.get('/submit-names', function(req, res){
+    
+    //extracting the names
+    var name = req.query.name;
+    names.push(name);
 
+    req.send(JSON.stringify(names));
+    
+   
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
