@@ -38,12 +38,29 @@ submits.onclick = function(){
     // make the request
     
     //capture the respose
-    var nam = ['name1', 'name2', 'name3', 'name4'];
-    var list = '';
-    for(var i=0; i<nam.length; i++){
-        list += '<li>' + nam[i] +'</li>';
-    }
-    var ul = document.getElementById('List');
-    ul.innerHTML = list;
+   
     
+    //create request object
+    var request = new XMLHttpRequest();
+    
+    //get the response and store it
+    request.onreadystatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            // action
+            if(request.status === 200){
+                var nam = request.responseText;
+                nam = JSON.parse(nam);
+                var list = '';
+                for(var i=0; i<nam.length; i++){
+                    list += '<li>' + nam[i] +'</li>';
+                }
+                var ul = document.getElementById('List');
+                ul.innerHTML = list;
+            }
+            
+        }
+    };
+    
+    request.open('GET', 'http://jijoraju.imad.hasura-app.io/submit-names', true);
+    request.send(null);
 };
