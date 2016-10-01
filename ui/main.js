@@ -32,7 +32,7 @@ button.onclick = function(){
 
 //capture names
 
-var names = document.getElementById('name').value;
+
 var submits = document.getElementById('submit');
 submits.onclick = function(){
   
@@ -56,7 +56,7 @@ submits.onclick = function(){
             
         }
     };
-    
+    var names = document.getElementById('name').value;
     request.open('GET', 'http://jijoraju.imad.hasura-app.io/submit-names?name=' + names, true);
     request.send(null);
 };
