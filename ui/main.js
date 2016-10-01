@@ -27,4 +27,21 @@ button.onclick = function(){
     
     
     
+}; 
+
+
+//capture names
+
+var names = document.getElementById('name').value;
+var submits = document.getElementById('submit');
+submits.onclick = function(){
+    // make the request
+    
+    //capture the respose
+    var nam = ['name1', 'name2', 'name3', 'name4'];
+    var list = '';
+    for(var i=0;i<nam.length;i++){
+        list = '<li>' + nam[i] +'</li>';
+    }
+    
 };
