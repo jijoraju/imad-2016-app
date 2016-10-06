@@ -1,38 +1,70 @@
 <!doctype html>
 <html>
     <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
+        
         <div class="container">
-            <div class="center">
-                <img src="https://pbs.twimg.com/profile_images/650246835454369793/S0eOA8DC.jpg" class="img-medium" id="jijo-pic"/>
-            </div>
-            <hr/>
-            <h3>Personal</h3>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="panel panel-default">
+						  <div class="panel-heading"><img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAOcAAAAJGZkN2RhMDc3LTY5N2ItNGQwYi1hOTNiLTg4MGJjNDJjMGQ4Yg.jpg" class="img-circle img-responsive" alt="Cinque Terre" width="250" height="236"></div>
+						  <div class="panel-body">
+							kdslfakjg
+							dakhskjf
+							akgfsjagf
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+						<li><a data-toggle="tab" href="#menu1">About Me</a></li>
+						<li><a data-toggle="tab" href="#menu2">Education</a></li>
+						<li><a data-toggle="tab" href="#menu3">Work</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="home" class="tab-pane fade in active">
+						  <h3>HOME</h3>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div id="menu1" class="tab-pane fade">
+						  <h3>Menu 1</h3>
+						  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div id="menu2" class="tab-pane fade">
+						  <h3>Menu 2</h3>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						</div>
+						<div id="menu3" class="tab-pane fade">
+						  <h3>Menu 3</h3>
+						  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="container">
             <div>
-                Hi, i am Jijo
+                <input type="text" name="name" id="name" placeholder="your name" />
+                <input type="submit" id="submit" />
+                <ul id='List'>
+                 
+                </ul>
             </div>
-            <hr/>
-            <h3>Professional</h3>
-            <div>
-                i work at Tata consultancy services
-            </div>
-             <hr/>
-             <div>
-                 <input type="text" name="name" id="name" placeholder="your name" />
-                 <input type="submit" id="submit" />
-                 <ul id='List'>
-                     
-                 </ul>
-             </div>
-             <div class="footer">
+            <div class="footer">
                  This button  <button id="click">Click me!</button> has been clicked <span id="count">0</span> times.
-             </div>
-            
+            </div>
         </div>
         
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/ui/main.js">
             
         </script>
