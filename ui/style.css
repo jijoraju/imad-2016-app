@@ -25,6 +25,7 @@ body {
     font-family: sans-serif;
     color: gray;
 }
+.topbar {background:url(../images/lines.png);	height:6px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 
 .animated {
   -webkit-animation-duration: 1s;
