@@ -18,12 +18,6 @@ body {
 .img-medium {
     height: 200px;
 }
-.container{
-    margin: 0 auto;
-    max-width: 800px;
-    font-family: sans-serif;
-    color: gray;
-}
 .topbar {background:url('http://www.drtapan.com/wp-content/uploads/2015/06/blue-line.png');	height:6px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 
 .animated {
