@@ -18,7 +18,7 @@ body {
 .img-medium {
     height: 200px;
 }
-.topbar {background:url('http://www.drtapan.com/wp-content/uploads/2015/06/blue-line.png');	height:6px;position: fixed;top: 0;width: 100%;z-index: 1000;}
+.topbar {background:url('lines.png');	height:6px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 
 .animated {
   -webkit-animation-duration: 1s;
