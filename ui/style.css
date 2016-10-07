@@ -1,6 +1,5 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
     margin-top: 75px;
 }
 
@@ -25,7 +24,7 @@ body {
     font-family: sans-serif;
     color: gray;
 }
-.topbar {background:url(http://www.drtapan.com/wp-content/uploads/2015/06/blue-line.png);	height:6px;position: fixed;top: 0;width: 100%;z-index: 1000;}
+.topbar {background:url('http://www.drtapan.com/wp-content/uploads/2015/06/blue-line.png');	height:6px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 
 .animated {
   -webkit-animation-duration: 1s;
